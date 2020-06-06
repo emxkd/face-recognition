@@ -5,11 +5,11 @@
 
 import tensorflow
 
-# In[]:
+# In[ ]:
 
 from keras.applications import ResNet50
 
-# In[]:
+# In[ ]:
 
 img_rows = 224
 img_cols = 224 
@@ -20,7 +20,7 @@ ResNet50 = ResNet50(weights = 'imagenet',
                  input_shape = (img_rows, img_cols, 3))
 
 
-# In[]:
+# In[ ]:
 
 # Print Layers
 for (i,layer) in enumerate(ResNet50.layers):
@@ -212,8 +212,5 @@ for i in range(0,3):
     cv2.waitKey(0)
 
 cv2.destroyAllWindows()
-
-
-
 
 
